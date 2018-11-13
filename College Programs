@@ -1,0 +1,158 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author CC2_1E-36
+ */
+public class JavaApplication1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        
+        String college, acadProg;
+        
+        
+        System.out.println ("What is your College?");
+           college = input.nextLine ();
+           
+        if (college.equals ("CAS")){
+            System.out.println ("What is your Academic Program? ( English, Polotical Science, Communication, Psychology"); 
+                acadProg = input.nextLine ();
+         
+           if (acadProg.equals ("English")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Arts in " + acadProg);
+           }
+           else if (acadProg.equals ("Political Science")){
+               System.out.println ("College of " + college );
+               System.out.println ("Bachelor of Arts in " + acadProg);
+           }    
+           else if (acadProg.equals ("Communication")) {
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Arts in " + acadProg);
+           }
+           else if (acadProg.equals ("Psychology")) {
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else {
+               System.out.println ("Invalid Input");
+           }
+        }   
+        if (college.equals ("CBA")) {
+            System.out.println ("What is your Academic Program? ( Business Administration, Office Administration, Entrepreneurship");
+               acadProg = input.nextLine ();
+        
+           if (acadProg.equals ("Business Administration")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Office Administration")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Entrepreneurship")) {
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else {
+               System.out.println ("Invalid Input");
+           }
+        } 
+       if (college.equals ("CEA")) {
+           System.out.print ("What is your Academic Program? ( Architecture, Civil Engineering, Computer Engineering, Electronics Engineering, Environmental & Sanitary Engineering");
+              acadProg = input.nextLine ();
+              
+           if (acadProg.equals ("Architecture")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Civil Engineering")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Computer Engineering")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Electronics Engineering")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Environmental & Sanitary Engineering")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else {
+               System.out.println ("Invalid Input");
+           }
+       }  
+       if (college.equals ("CITCS")){
+           System.out.println ("What is your Academic Program? ( Computer Science, Information Technology, Information System, Computer Technology");
+              acadProg = input.nextLine ();
+       
+           if (acadProg.equals ("Computer Science")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Information Technology")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in" + acadProg);
+           }
+           else if (acadProg.equals ("Information System")){
+               System.out.println ("College of " + college);
+               System.out.println ("Bachelor of Science in " + acadProg);
+           }
+           else if (acadProg.equals ("Computer Technology")){
+               System.out.println ("College of " + college);
+               System.out.println ("Associate in " + acadProg);
+           }
+           else {
+               System.out.println ("Invalid Input");
+           }
+       }   
+      if (college.equals ("CTE")){
+          System.out.println ("What is your Academic Program? ( Elementary Education - General, Elementary Education, Secondary Education");
+             acadProg = input.nextLine ();
+      
+          if (acadProg.equals ("Elementary Education - General")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else if (acadProg.equals ("Elementary Education")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else if (acadProg.equals ("Secondary Education")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else {
+              System.out.println ("Invalid Input");
+          }
+      }  
+      if (college.equals ("COA")){
+          System.out.println ("What is your Academic Program? ( Accountancy, Accounting Technology, Management Accounting, Forensic Accounting");
+              acadProg = input.nextLine ();
+      
+          if (acadProg.equals ("Accountancy")){
+             System.out.println ("College of " + college);
+             System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else if (acadProg.equals ("Accounting Technology")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else if (acadProg.equals ("Management Accounting")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else if (acadProg.equals ("Forensic Accounting")){
+              System.out.println ("College of " + college);
+              System.out.println ("Bachelor of Science in " + acadProg);
+          }
+          else {
+              System.out.println ("Invalid Input");
+          }
+      }    
+    }
+}
