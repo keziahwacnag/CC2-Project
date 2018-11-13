@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author m307user
+ */
+public class CC1 {
+   
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in) ;
+        
+        int age ;
+        
+        System.out.println ("Please enter your age: ");
+        age = input.nextInt ();
+        
+        if (age >= 0 && age <= 2){
+            System.out.println ("Baby");
+        }
+        else if (age >= 3 && age <= 5){
+            System.out.println("Toddler");
+        }
+        else if (age >= 6 && age <= 12){
+            System.out.println ("Kid");
+        }
+        else if (age >= 13 && age <= 19) {
+            System.out.println ("Teenager");
+        }
+        else if (age >= 20 && age <= 34){
+            System.out.println ("Young Adult") ;
+        }
+        else if (age >= 35 && age <= 45) {
+            System.out.println ("Middle Ager");
+        }
+        else if (age >= 46 && age <= 110) {
+            System.out.println ("Old");
+        }
+        else 
+            System.out.println ("Invalid Input");
+        
+    }
+}
