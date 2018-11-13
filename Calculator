@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author CC2_1E-36
+ */
+public class JavaApplication9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        display();
+        
+        int a = 10;
+        int b = 5;
+    }
+    static int getSum (int a, int b){
+        return a + b;
+    }
+    static int getDif (int a, int b){
+        return a - b;
+    }
+    static int getProduct (int a, int b){
+        return a * b;
+    }
+    static int getQuotient (int a, int b){
+        return a / b;
+    }
+    static void display (){
+        int sum = getSum (10,5);
+        int dif = getDif (10,5);
+        int product = getProduct (10,5);
+        int quotient = getQuotient (10,5);
+            System.out.println (sum);
+            System.out.println (dif);
+            System.out.println (product);
+            System.out.println (quotient);
+    }
+}
