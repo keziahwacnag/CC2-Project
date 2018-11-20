@@ -1,0 +1,45 @@
+package ifelseif;
+
+import java.util.Scanner;
+
+public class MultipleArrays {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int [][] myArray = new int[3][4];
+        int row, col; 
+        int x, y;
+        
+        myArray[0][0] = 1;
+        myArray[1][1] = 2;
+        myArray[2][2] = 3;
+        myArray[0][3] = 4;
+        
+        System.out.print("Enter number of ROW for array: ");
+        row = sc.nextInt();
+        System.out.print ("Enter number of COLUMN for array: ");
+        col = sc.nextInt();
+        
+        System.out.print("Enter "+ (row+col)+ " Array Elements: ");
+        for(x = 0; x < row; x++){
+            for(y = 0; y < col; y++){
+                myArray[x][y] = sc.nextInt();
+            }
+        }
+        System.out.print("The array is: \n");
+        for(x = 0; x < row;  x++){
+            for(y = 0; y < col; y++){
+                System.out.print(myArray[x][y]+ "  ");
+                
+                for(x = 0; x < myArray.length; x++){
+                    int[] sub = myArray[x];
+                    for(y = 0; y < sub.length; y++){
+                        System.out.print(sub[y]+ "  ");
+                    }
+                }    
+            }
+        }
+            System.out.println();
+    }
+}
+
