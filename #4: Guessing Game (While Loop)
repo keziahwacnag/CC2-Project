@@ -1,0 +1,27 @@
+package ifelseif;
+
+import java.util.Scanner;
+
+public class WhileLoops {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int RandomNum = 0;
+        int count = 0;
+        int x = 1 + (int)(Math.random() * 999);
+                
+        System.out.println("A fixed number, from 1 to 1000, has been chosen. Try and guess what it is.");
+        
+        while(RandomNum != x) {
+            RandomNum = sc.nextInt();
+            count++;
+            
+            if(RandomNum > x) {
+                System.out.println("Go lower!");
+            }
+            else if(RandomNum < x) {
+                System.out.println("Go higher!");
+            }
+        }
+        System.out.println("Good job! You guessed the number correctly with "+ count + " tries.");
+    }
+} 
